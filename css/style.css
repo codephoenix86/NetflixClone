@@ -9,24 +9,29 @@ body {
 
 /* home section */
 #home::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 62%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    transparent 62%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }
 
 #home::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url(/images/background/home-background.jpg);
+  background-image: url("/netflix_clone/images/background/home-background.jpg");
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -37,7 +42,7 @@ body {
 }
 
 /* header of home */
-#home>header {
+#home > header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -46,16 +51,16 @@ body {
   margin: 0 auto;
 }
 
-#home>header>form {
+#home > header > form {
   display: inline-flex;
 }
 
-#home>header>form>div {
+#home > header > form > div {
   position: relative;
 }
 
-#home>header>form>div:nth-child(1)::before {
-  content: '';
+#home > header > form > div:nth-child(1)::before {
+  content: "";
   background-image: url(/images/icons/translate.png);
   background-size: contain;
   width: 16px;
@@ -69,8 +74,8 @@ body {
   filter: invert(100%);
 }
 
-#home>header>form>div:nth-child(1)::after {
-  content: '';
+#home > header > form > div:nth-child(1)::after {
+  content: "";
   display: block;
   height: 8px;
   width: 8px;
@@ -83,7 +88,7 @@ body {
   background-image: url(/images/icons/down.png);
 }
 
-#home>header>form>div:nth-child(1)>select {
+#home > header > form > div:nth-child(1) > select {
   color: white;
   background-color: rgba(0, 0, 0, 0.63);
   display: block;
@@ -97,7 +102,7 @@ body {
   margin-right: 4px;
 }
 
-#home>header>form>div:nth-child(2)>button {
+#home > header > form > div:nth-child(2) > button {
   color: white;
   background-color: rgb(229, 9, 20);
   display: block;
@@ -110,13 +115,13 @@ body {
   margin-left: 4px;
 }
 
-#home>header>form>div:nth-child(2)>button:hover {
+#home > header > form > div:nth-child(2) > button:hover {
   cursor: pointer;
   background-color: rgb(193, 17, 25);
   border-color: rgb(193, 17, 25);
 }
 
-#home>header>div>img {
+#home > header > div > img {
   height: 60px;
   width: 150px;
   vertical-align: top;
@@ -126,56 +131,56 @@ body {
 
 /* section of home */
 
-#home>section {
+#home > section {
   margin: 0 24px;
   padding-top: 152px;
   padding-bottom: 270px;
 }
 
-#home>section>p {
+#home > section > p {
   margin: 0;
   text-align: center;
   color: white;
 }
 
-#home>section>p:nth-child(1) {
+#home > section > p:nth-child(1) {
   font-weight: 900;
   font-size: 3rem;
 }
 
-#home>section>p:nth-child(2) {
+#home > section > p:nth-child(2) {
   font-size: 1.5rem;
   margin-top: 16px;
   font-weight: 400;
 }
 
-#home>section>form {
+#home > section > form {
   margin-top: 24px;
   padding: 0 24px;
 }
 
-#home>section>form>p {
+#home > section > form > p {
   text-align: center;
   color: white;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-#home>section>form>div {
+#home > section > form > div {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
 
-#home>section>form>div>div,
-#FAQ>div>form>div>div>div {
+#home > section > form > div > div,
+#FAQ > div > form > div > div > div {
   margin: 0 4px;
   background-color: #000000a1;
   position: relative;
 }
 
-#home>section>form>div>div:nth-child(1)>div,
-#FAQ>div>form>div>div>div:nth-child(1)>div {
+#home > section > form > div > div:nth-child(1) > div,
+#FAQ > div > form > div > div > div:nth-child(1) > div {
   color: #8e8d8e;
   display: flex;
   align-items: center;
@@ -191,9 +196,8 @@ body {
 
 /* #FAQ>div>form>div>div>input */
 
-
-#home>section>form>div>div>input,
-#FAQ>div>form>div>div>div>input {
+#home > section > form > div > div > input,
+#FAQ > div > form > div > div > div > input {
   box-sizing: border-box;
   display: block;
   border: none;
@@ -202,8 +206,8 @@ body {
   height: 56px;
 }
 
-#home>section>form>div>div:nth-child(1)>input[type=email],
-#FAQ>div>form>div>div>div:nth-child(1)>input[type=email] {
+#home > section > form > div > div:nth-child(1) > input[type="email"],
+#FAQ > div > form > div > div > div:nth-child(1) > input[type="email"] {
   font-size: 1rem;
   position: relative;
   background-color: transparent;
@@ -214,22 +218,21 @@ body {
   padding-top: 24px;
 }
 
-
-#home>section>form>div>div:nth-child(1)>input[type=email]:focus,
-#FAQ>div>form>div>div>div:nth-child(1)>input[type=email]:focus {
+#home > section > form > div > div:nth-child(1) > input[type="email"]:focus,
+#FAQ > div > form > div > div > div:nth-child(1) > input[type="email"]:focus {
   outline: none;
 }
 
-#home>section>form>div>div:nth-child(2)>input[type=submit],
-#FAQ>div>form>div>div>div:nth-child(2)>input[type=submit] {
+#home > section > form > div > div:nth-child(2) > input[type="submit"],
+#FAQ > div > form > div > div > div:nth-child(2) > input[type="submit"] {
   background-color: rgb(229, 9, 20);
   font-size: 1.5rem;
   padding: 12px 24px;
   color: white;
 }
 
-#home>section>form>div>div:nth-child(2)>input[type=submit]:hover,
-#FAQ>div>form>div>div>div:nth-child(2)>input[type=submit]:hover {
+#home > section > form > div > div:nth-child(2) > input[type="submit"]:hover,
+#FAQ > div > form > div > div > div:nth-child(2) > input[type="submit"]:hover {
   cursor: pointer;
   background-color: rgb(193, 17, 25);
 }
@@ -245,10 +248,10 @@ body {
   background-color: black;
 }
 
-#TV>div,
-#mobile>div,
-#watch>div,
-#kids>div {
+#TV > div,
+#mobile > div,
+#watch > div,
+#kids > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,59 +260,59 @@ body {
   width: 80%;
 }
 
-#TV>div>main,
-#mobile>div>main,
-#watch>div>main,
-#kids>div>main {
+#TV > div > main,
+#mobile > div > main,
+#watch > div > main,
+#kids > div > main {
   color: white;
   width: 100%;
 }
 
-#TV>div>main>h2,
-#mobile>div>main>h2,
-#watch>div>main>h2,
-#kids>div>main>h2 {
+#TV > div > main > h2,
+#mobile > div > main > h2,
+#watch > div > main > h2,
+#kids > div > main > h2 {
   font-size: 3rem;
   margin: 0;
   font-weight: 900;
 }
 
-#TV>div>main>p,
-#mobile>div>main>p,
-#watch>div>main>p,
-#kids>div>main>p {
+#TV > div > main > p,
+#mobile > div > main > p,
+#watch > div > main > p,
+#kids > div > main > p {
   font-size: 1.5rem;
   margin: 0;
   margin: 16px 0;
   font-weight: 400;
 }
 
-#TV>div>div,
-#mobile>div>div,
-#watch>div>div,
-#kids>div>div {
+#TV > div > div,
+#mobile > div > div,
+#watch > div > div,
+#kids > div > div {
   position: relative;
   width: 100%;
 }
 
-#TV>div>div>img,
-#mobile>div>div>img,
-#watch>div>div>img,
-#kids>div>div>img {
+#TV > div > div > img,
+#mobile > div > div > img,
+#watch > div > div > img,
+#kids > div > div > img {
   position: relative;
   vertical-align: top;
   width: 100%;
 }
 
-#TV>div>div>img {
+#TV > div > div > img {
   z-index: 2;
 }
 
-#mobile>div>div>img {
+#mobile > div > div > img {
   z-index: 0;
 }
 
-#TV>div>div>video {
+#TV > div > div > video {
   position: absolute;
   display: block;
   z-index: 1;
@@ -318,7 +321,7 @@ body {
   width: 72.8%;
 }
 
-#mobile>div>div>div {
+#mobile > div > div > div {
   display: flex;
   color: white;
   background-color: black;
@@ -332,38 +335,38 @@ body {
   transform: translateX(-50%);
 }
 
-#mobile>div>div>div>img {
+#mobile > div > div > div > img {
   margin-right: 16px;
   height: 4rem;
 }
 
-#mobile>div>div>div>div {
+#mobile > div > div > div > div {
   display: flex;
   text-align: left;
   flex-direction: column;
   justify-content: center;
 }
 
-#mobile>div>div>div>div>h2 {
+#mobile > div > div > div > div > h2 {
   font-size: 1rem;
   font-weight: 500;
 }
 
-#mobile>div>div>div>div>p {
+#mobile > div > div > div > div > p {
   font-size: 0.875rem;
   font-weight: 400;
   color: #0071eb;
 }
 
-#watch>div>div>video {
+#watch > div > div > video {
   position: absolute;
   top: 12%;
   left: 18.5%;
   width: 62%;
 }
 
-#FAQ>div,
-#end-page>div {
+#FAQ > div,
+#end-page > div {
   display: flex;
   color: white;
   flex-direction: column;
@@ -372,13 +375,13 @@ body {
   margin: auto;
 }
 
-#FAQ>div>h1 {
+#FAQ > div > h1 {
   font-size: 3rem;
   font-weight: 900;
   text-align: center;
 }
 
-#FAQ>div>ul {
+#FAQ > div > ul {
   list-style: none;
   margin: 0;
   margin-top: 24px;
@@ -387,7 +390,7 @@ body {
   flex-direction: column;
 }
 
-#FAQ>div>ul>li {
+#FAQ > div > ul > li {
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -395,7 +398,7 @@ body {
   margin-bottom: 8px;
 }
 
-#FAQ>div>ul>li>div:nth-child(1) {
+#FAQ > div > ul > li > div:nth-child(1) {
   color: white;
   display: flex;
   align-items: center;
@@ -404,12 +407,12 @@ body {
   padding: 24px;
 }
 
-#FAQ>div>ul>li>div:nth-child(1):hover {
+#FAQ > div > ul > li > div:nth-child(1):hover {
   cursor: pointer;
   background-color: rgb(65, 65, 65);
 }
 
-#FAQ>div>ul>li>div:nth-child(2) {
+#FAQ > div > ul > li > div:nth-child(2) {
   background-color: rgb(45, 45, 45);
   font-size: 1.5rem;
   font-weight: 400;
@@ -417,35 +420,32 @@ body {
   padding: 24px;
 }
 
-
-
-#FAQ>div>ul>li:nth-child(1)>div:nth-child(2)>p:nth-child(1),
-#FAQ>div>ul>li:nth-child(3)>div:nth-child(2)>p:nth-child(1),
-#FAQ>div>ul>li:nth-child(7)>div:nth-child(2)>p:nth-child(1) {
+#FAQ > div > ul > li:nth-child(1) > div:nth-child(2) > p:nth-child(1),
+#FAQ > div > ul > li:nth-child(3) > div:nth-child(2) > p:nth-child(1),
+#FAQ > div > ul > li:nth-child(7) > div:nth-child(2) > p:nth-child(1) {
   margin-bottom: 16px;
 }
 
-#FAQ>div>ul>li>div:nth-child(1)>h2 {
+#FAQ > div > ul > li > div:nth-child(1) > h2 {
   text-align: left;
   font-size: 1.5rem;
   font-weight: 400;
 }
 
-#FAQ>div>ul>li>div:nth-child(1)>img {
+#FAQ > div > ul > li > div:nth-child(1) > img {
   width: 32px;
   vertical-align: top;
   transform: rotate(0deg);
   filter: invert(100%);
 }
 
-
-#FAQ>div>form {
+#FAQ > div > form {
   margin-top: 24px;
   padding: 0 24px;
   text-align: center;
 }
 
-#FAQ>div>form>div>div {
+#FAQ > div > form > div > div {
   display: flex;
   justify-content: center;
   margin-top: 16px;
@@ -464,7 +464,7 @@ body {
   height: 46px;
 } */
 
-#FAQ>div>form>div>h2 {
+#FAQ > div > form > div > h2 {
   text-align: center;
   color: white;
   font-size: 1.25rem;
@@ -493,33 +493,33 @@ body {
   background-color: rgb(193, 17, 25);
 } */
 
-#end-page>div {
+#end-page > div {
   display: flex;
   font-size: 1rem;
   color: #b2aea6;
   flex-direction: column;
 }
 
-#end-page>div>div {
+#end-page > div > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#end-page>div>p:nth-child(1) {
+#end-page > div > p:nth-child(1) {
   margin-bottom: 12px;
 }
 
-#end-page>div>p:nth-child(3) {
+#end-page > div > p:nth-child(3) {
   margin-top: 24px;
 }
 
-#end-page>div>p:nth-child(1)>a {
+#end-page > div > p:nth-child(1) > a {
   font-size: 1rem;
   color: #b2aea6;
   font-weight: 400;
 }
 
-#end-page>div>div>a {
+#end-page > div > div > a {
   font-size: 14px;
   padding-top: 16px;
   color: #b2aea6;
@@ -530,119 +530,118 @@ body {
 }
 
 @media only screen and (max-width: 1280px) {
-  #home>header {
+  #home > header {
     width: auto;
   }
 
-  #TV>div,
-  #mobile>div,
-  #watch>div,
-  #kids>div,
-  #FAQ>div,
-  #end-page>div {
+  #TV > div,
+  #mobile > div,
+  #watch > div,
+  #kids > div,
+  #FAQ > div,
+  #end-page > div {
     width: auto;
     margin: 0 32px;
   }
 
-  #mobile>div>div>div {
+  #mobile > div > div > div {
     width: 60%;
     min-width: 16rem;
   }
 }
 
 @media only screen and (max-width: 960px) {
-
-  #home>header>div>img {
+  #home > header > div > img {
     width: 84.375px;
     height: 33.75px;
   }
 
-  #home>section {
+  #home > section {
     padding-top: 64px;
     padding-bottom: 132px;
   }
 
-  #home>section>p:nth-child(1) {
+  #home > section > p:nth-child(1) {
     font-size: 2rem;
     font-weight: 700;
   }
 
-  #home>section>p:nth-child(2),
-  #home>section>form>p,
-  #FAQ>div>form>div>h2,
-  #FAQ>div>ul>li>div:nth-child(1)>h2,
-  #FAQ>div>ul>li>div:nth-child(2) {
+  #home > section > p:nth-child(2),
+  #home > section > form > p,
+  #FAQ > div > form > div > h2,
+  #FAQ > div > ul > li > div:nth-child(1) > h2,
+  #FAQ > div > ul > li > div:nth-child(2) {
     font-size: 1.125rem;
   }
 
-  #TV>div,
-  #mobile>div,
-  #watch>div,
-  #kids>div {
+  #TV > div,
+  #mobile > div,
+  #watch > div,
+  #kids > div {
     text-align: center;
   }
 
-  #TV>div,
-  #watch>div {
+  #TV > div,
+  #watch > div {
     flex-direction: column;
   }
 
-  #mobile>div,
-  #kids>div {
+  #mobile > div,
+  #kids > div {
     flex-direction: column-reverse;
   }
 
-  #TV>div>div {
+  #TV > div > div {
     max-width: 640px;
   }
 
-  #TV>div>main>h2,
-  #mobile>div>main>h2,
-  #watch>div>main>h2,
-  #kids>div>main>h2,
-  #FAQ>div>h1 {
+  #TV > div > main > h2,
+  #mobile > div > main > h2,
+  #watch > div > main > h2,
+  #kids > div > main > h2,
+  #FAQ > div > h1 {
     font-size: 2rem;
     font-weight: 700;
   }
 
-  #TV>div>main>p,
-  #mobile>div>main>p,
-  #watch>div>main>p,
-  #kids>div>main>p,
-  #FAQ>div>ul>li>h2 {
+  #TV > div > main > p,
+  #mobile > div > main > p,
+  #watch > div > main > p,
+  #kids > div > main > p,
+  #FAQ > div > ul > li > h2 {
     font-size: 1.125rem;
     font-weight: 400;
   }
 
-  #end-page>div>div {
+  #end-page > div > div {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media only screen and (max-width:600px) {
-  #home>section {
+@media only screen and (max-width: 600px) {
+  #home > section {
     padding-top: 32px;
     padding-bottom: 42px;
   }
 
-  #home>header>form>div:nth-child(1)>select {
+  #home > header > form > div:nth-child(1) > select {
     width: 0;
   }
 
-  #home>section>form>div,
-  #FAQ>div>form>div>div {
+  #home > section > form > div,
+  #FAQ > div > form > div > div {
     flex-wrap: wrap;
   }
 
-  #home>section>form>div>div:nth-child(1),
-  #FAQ>div>form>div>div>div:nth-child(1) {
+  #home > section > form > div > div:nth-child(1),
+  #FAQ > div > form > div > div > div:nth-child(1) {
     width: 100%;
     margin: 0;
     margin-bottom: 16px;
   }
 
-  #home>section>form>div>div:nth-child(1)>input[type=email],
-  #FAQ>div>form>div>div>div:nth-child(1)>input[type=email] {
+  #home > section > form > div > div:nth-child(1) > input[type="email"],
+  #FAQ > div > form > div > div > div:nth-child(1) > input[type="email"] {
     width: 100%;
   }
 
@@ -655,12 +654,12 @@ body {
     padding: 56px 0;
   }
 
-  #TV>div,
-  #mobile>div,
-  #watch>div,
-  #kids>div,
-  #FAQ>div,
-  #end-page>div {
+  #TV > div,
+  #mobile > div,
+  #watch > div,
+  #kids > div,
+  #FAQ > div,
+  #end-page > div {
     margin: 0 24px;
     width: auto;
   }
